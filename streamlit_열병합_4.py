@@ -4,7 +4,7 @@ import streamlit as st
 import plotly.express as px
     # Input values
 st.header("DAESUNG Energy Co-Generation Optimization")
-gen_kW = st.number_input("Enter gen_kWh/m3 value", value=2.0, step=0.01)
+gen_kW = st.number_input("Enter gen_kWh/m3 value", value=3.36, step=0.01)
 household_count = st.number_input("Enter household_count value", value=526, step=1)
 effi_boil = st.number_input("Enter effi_boil value", value=0.4, step=0.01)
 month = st.slider("Select month", 1, 12, 5)
