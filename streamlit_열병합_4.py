@@ -36,6 +36,8 @@ def plot_costs(df_table, month):
     plt.figure(figsize=(10, 6))
     plt.plot(df_table['i'], df_table['cost_elec'], label='Electricity Cost')
     plt.plot(df_table['i'], df_table['cost_cogen'], label='Cogen Cost')
+    plt.plot(df_table['i'], df_table['cost_boiler'], label='Boiler Cost')
+
     plt.plot(df_table['i'], df_table['total'], label='Total Cost')
 
     # Highlight the minimum total row
